@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    font-family: "Protest Riot", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /*Deslizar cuando hago click en los botones del menu */
+}
+/*H E A D E R*/
+header {
+    background: #181111cb;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+header {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.logo a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    color: #0588A6;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0px 60px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+}
+header nav ul li a:hover {
+    color: #031926;
+}
+.responsive-nav {
+    background-color: #031926;
+    color: #0588A6;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCIÓN H O M E */
+.home {
+    background: linear-gradient(to top, rgba(30, 35, 38,.8), rgba(30, 35, 38, 1)), url(Images/fondo.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.banner-container {
+    padding: 20px;
+    background-color: #181111cb;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+.banner-container img {
+    margin-top: 40px;
+    border: 7px solid #06414eb2;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.banner-container h1 {
+    margin-top: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+}
+.banner-container h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+.redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #07596b;
+    border-radius: 100%;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    margin: 40px 10px;
+    font-size: 23px;
+    transition: .3s;
+}
+.redes a:hover {
+    background-color: #031926;
+}
+/* SECCIÓN A B O U T M E*/
+.aboutme {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 40px 20px;
+    height: 95vh;
+}
+.aboutme-container {
+    max-width: 1100px;
+    margin: auto;
+}
+.aboutme h2 {
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 50px 0;
+}
+.aboutme-container p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.aboutme-container p span {
+    color: #0588A6;
+    font-size: 23px;
+}
+.rows {
+    display: flex;
+}
+.personal-data {
+    width: 50%;
+}
+.personal-data h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.personal-data ul {
+    list-style: none;
+    font-weight: normal;
+}
+.personal-data ul li {
+    margin: 20px 0;
+}
+.personal-data ul strong {
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+    color: #0588A6;
+    width: 130px;
+}
+.personal-data ul li span {
+    background-color: #07596b;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.interests-data {
+    width: 50%;
+}
+.interests-data h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.interest {
+    width: 120px;
+    height: 100px;
+    background-color: #1d1616;
+    border-radius: 10px;
+    margin: 0 50px 15px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    transition: .3s; 
+    font-size: 15px; 
+    color: #fff;
+}
+.interest:hover {
+    background-color: #031926;
+}
+.interest i {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #0588A6;
+}
+.aboutme button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px 22px;
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    font-family: "Bebas Neue", sans-serif;
+}
+.aboutme button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0e0a0acb;
+    z-index: .1;
+    transition: 1s;
+}
+.aboutme button:hover .overlay {
+    width: 100%;
+}
+/* SECCIÓN S K I L L S */
+.skills {
+    background-color: #22252b;
+    color: #fff;
+    padding: 40px 20px;
+}
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2 {
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.rows2 {
+    display: flex;
+}
+.skills-container2 {
+    width: 50%;
+    padding: 0 20px;
+}
+.skills-container h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.skill span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.skill-bar {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #0d0b14;
+    height: 5px;
+    width: 80%;
+}
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #0291bd;
+}
+.skill-bar span {
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    background-color: #0291bd;
+    border-radius: 10px;
+    line-height: 33px;
+    text-align: center;
+    top: -11px;
+    right: -15px;
+    font-size: 13px;
+}
+.htmlcss {
+    width: 0%;
+    animation: 2s html-css forwards;
+}
+@keyframes html-css {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+.javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0% {width: 0%;}
+    100% {width: 20%;}
+}
+.python {
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0% {width: 0%;}
+    100% {width: 5%;}
+}
+.java {
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java {
+    0% {width: 0%;}
+    100% {width: 5%;}
+}
+.idiomas {
+    width: 0%;
+    animation: 2s idiomas forwards;
+}
+@keyframes idiomas {
+    0% {width: 0%;}
+    100% {width: 30%;}
+}
+/*aqui*/
+.trabajoenequipo {
+    width: 0%;
+    animation: 2s trabajoenequipo forwards;
+}
+@keyframes trabajoenequipo {
+    0% {width: 0%;}
+    100% {width: 75%;}
+}
+.comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0% {width: 0%;}
+    100% {width: 40%;}
+}
+.adaptabilidad {
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+    0% {width: 0%;}
+    100% {width: 65%;}
+}
+.creatividad {
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+.dedicacion {
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+/*SECCIÓN C O N T A C T O*/
