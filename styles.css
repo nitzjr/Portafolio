@@ -297,9 +297,9 @@ header nav ul li a:hover {
 }
 .htmlcss {
     width: 0%;
-    animation: 2s html-css forwards;
+    animation: 2s htmlcss forwards;
 }
-@keyframes html-css {
+@keyframes htmlcss {
     0% {width: 0%;}
     100% {width: 70%;}
 }
